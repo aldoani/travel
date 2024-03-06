@@ -1,0 +1,69 @@
+﻿@model IEnumerable<travel.Models.travels_tb>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.travel_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.travel_from)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.travel_to)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.travel_time_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.travel_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bus.bus_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.line.line_name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.travel_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.travel_from)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.travel_to)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.travel_time_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.travel_price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bus.bus_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.line.line_name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.travel_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.travel_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.travel_id })
+        </td>
+    </tr>
+}
+
+</table>

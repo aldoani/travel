@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="324d1462c92349feb33be5d8ac09a5c9" Name="Diagram1" ZoomLevel="52">
+        <EntityTypeShape EntityType="DB_travelsModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.AspNetRole" Width="1.5" PointX="2.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.AspNetUserClaim" Width="1.5" PointX="7.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.AspNetUserLogin" Width="1.5" PointX="7.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.AspNetUser" Width="1.5" PointX="5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.bus" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.line" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.reserve" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.sysdiagram" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_travelsModel.travels_tb" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DB_travelsModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_travelsModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_travelsModel.FK_travels_tb_bus" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_travelsModel.FK_travels_tb_lines" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_travelsModel.FK_reserve_travels_tb" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_travelsModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

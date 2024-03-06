@@ -1,0 +1,37 @@
+﻿@model IEnumerable<travel.Models.travels_tb>
+@{
+    ViewBag.Title = "Home Page";
+}
+<head>
+    <link href="~/Content/bootstrap.css"> </link>
+    <link href="~/Content/bootstrap.min.css"> </link>
+     <style>
+         span{
+             font-size:20px;
+             margin-right:30px;;
+         }
+
+     </style>
+</head>
+@foreach (var item in Model)
+{
+
+
+
+    <div class="center text-center ">
+        <div class="card">
+            <h5 class="card-header">@Html.DisplayFor(modelItem => item.travel_name)</h5>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <span class="glyphicon glyphicon-time"></span>@Html.DisplayFor(modelItem => item.travel_time_date)
+            </h5>
+            <p class="card-text"><span class="glyphicon glyphicon-arrow-right"></span>  @Html.DisplayFor(modelItem => item.travel_from)</p>
+            <p class="card-text"><span class="glyphicon glyphicon-arrow-left"></span>@Html.DisplayFor(modelItem => item.travel_to)</p>
+
+
+                
+                <button class="btn btn-primary" value="See more">@Html.ActionLink("See More", "Details", new { id = item.travel_id }, new { @class = "button_color" })</button>
+        </div>
+    </div>
+</div>
+}

@@ -1,0 +1,74 @@
+﻿@model travel.Models.travels_tb
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>travels_tb</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.travel_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travel_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.travel_from)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travel_from)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.travel_to)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travel_to)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.travel_time_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travel_time_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.travel_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travel_price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bus.bus_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bus.bus_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.line.line_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.line.line_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.travel_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

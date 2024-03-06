@@ -1,0 +1,42 @@
+﻿@model travel.Models.bus
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>bus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.bus_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bus_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.passangers_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.passangers_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bus_model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bus_model)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.bus_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
